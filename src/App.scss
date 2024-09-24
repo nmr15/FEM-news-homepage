@@ -126,3 +126,47 @@ ul
     color: #78798C;
   }
 }
+
+.articlelight
+{
+  &-item
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.875rem;
+  }
+
+  &-img
+  {
+    width: 40%;
+
+    & img
+    {
+      width: 100%;
+    }
+  }
+
+  &-content
+  {
+    margin-left: 1.875rem;
+  }
+
+  &-heading
+  {
+    margin-bottom: 0.625rem;
+    color: hsl(5, 85%, 63%);
+    font-size: 32px;
+  }
+
+  &-title
+  {
+    margin-bottom: 0.625rem;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  &-desc
+  {
+    line-height: 1.8;
+  }
+}
