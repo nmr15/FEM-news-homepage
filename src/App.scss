@@ -79,7 +79,50 @@ ul
 
   &-text
   {
+    margin-bottom: 1rem;
     font-size: 15px;
     line-height: 2;
+  }
+
+  &-btn
+  {
+  
+    padding: 0.938rem 1.875rem;
+    color: #000;
+    font-weight: 800;
+    background-color: hsl(5, 85%, 63%);
+    text-transform: uppercase;
+    letter-spacing: 0.063rem;
+  }
+}
+
+.articleDark
+{
+  margin: 3.125rem 0;
+  padding: 1.25rem 1.25rem 1.875rem 1.25rem;
+  background-color: hsl(240, 100%, 5%);
+
+  &-heading
+  {
+    margin-bottom: 1.875rem;
+    color: hsl(35, 77%, 62%);
+  }
+
+  &-title
+  {
+    margin-bottom: 0.625rem;
+    color: hsl(36, 100%, 99%);
+  }
+
+  &-desc
+  {
+    color: #78798C;
+    font-size: 15px;
+  }
+
+  &-divider
+  {
+    margin: 1.875rem 0;
+    color: #78798C;
   }
 }

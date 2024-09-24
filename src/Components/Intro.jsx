@@ -17,6 +17,7 @@ const Intro = () =>
             We dive into the next evolution of the web that claims to put the power of the platform 
             back into the hands of the people. But is it really fulfilling its promise?
           </p>
+          <a href="#" className="intro-btn">Read more</a>
         </div>
       </section>
     </>
