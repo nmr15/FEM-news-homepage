@@ -39,18 +39,38 @@ ul
   display: flex;
   justify-content: space-between;
 
+  &-sm
+  {
+    position: fixed;
+    top: 0;
+    right: 0;
+    // width: 0;
+    height: 100%;
+    padding-top: 1.25rem;
+    z-index: 1;
+    background-color: #fff;
+    transition: all 0.3s;
+  
+    & span
+    {
+      margin-left: 80%;
+    }
+  }
+
   &-links
   {
     display: flex;
 
     &-sm
     {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 0;
-      flex-direction: column;
-      background-color: lightgray;
+      margin-top: 3.125rem;
+      margin-left: 1.563rem;
+      font-size: 18px;
+
+      & li
+      {
+        margin-top: 1.688rem;
+      }
     }
   }
 

@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import MediaQuery from "react-responsive"
 import { navLinks } from "../data"
 
 const Navbar = () => 
 {
+  const [navWidth, setNavWidth] = useState("0");
+
   return (
     <>
       <nav className="navbar">
@@ -21,16 +24,21 @@ const Navbar = () =>
           </ul>
         </MediaQuery>
         <MediaQuery maxWidth={768}>
-          <ul className="navbar-links-sm">
-            {
-              navLinks.map((navLink) => (
-                <li key={navLink.id}>
-                  <a href="#" className="navbar-link-sm">{navLink.title}</a>
-                </li>
-              ))
-            }
-          </ul>
-          <span><img src="/images/icon-menu.svg" alt="" /></span>
+          <div className="navbar-sm" style={{ width: navWidth }}>
+            <span onClick={() => setNavWidth("0")}><img src="/images/icon-menu-close.svg" alt="" /></span>
+            <ul className="navbar-links-sm">
+
+              {
+                navLinks.map((navLink) => (
+                  <li key={navLink.id}>
+                    <a href="#" className="navbar-link-sm">{navLink.title}</a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          
+          <span onClick={() => setNavWidth("68%")}><img src="/images/icon-menu.svg" alt="" /></span>
         </MediaQuery>
       </nav>
     </>
