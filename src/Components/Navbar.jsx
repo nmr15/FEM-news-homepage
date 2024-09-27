@@ -25,7 +25,7 @@ const Navbar = () =>
         </MediaQuery>
         <MediaQuery maxWidth={768}>
           <div className="navbar-sm" style={{ width: navWidth }}>
-            <span onClick={() => setNavWidth("0")}><img src="/images/icon-menu-close.svg" alt="" /></span>
+            <span className="navbar-toggle" onClick={() => setNavWidth("0")}><img src="/images/icon-menu-close.svg" alt="" /></span>
             <ul className="navbar-links-sm">
 
               {
@@ -38,7 +38,7 @@ const Navbar = () =>
             </ul>
           </div>
           
-          <span onClick={() => setNavWidth("68%")}><img src="/images/icon-menu.svg" alt="" /></span>
+          <span className="navbar-toggle" onClick={() => setNavWidth("68%")}><img src="/images/icon-menu.svg" alt="" /></span>
         </MediaQuery>
       </nav>
     </>

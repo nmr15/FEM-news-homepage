@@ -7,6 +7,9 @@ const Intro = () =>
     <>
       <section>
         <div className="intro">
+          <MediaQuery minWidth={769}>
+            <img src="/images/image-web-3-desktop.jpg" className="intro-img" alt="" />
+          </MediaQuery>
           <MediaQuery maxWidth={768}>
             <img src="/images/image-web-3-mobile.jpg" className="intro-img-sm" alt="" />
           </MediaQuery>

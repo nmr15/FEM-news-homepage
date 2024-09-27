@@ -24,6 +24,11 @@ a
   text-decoration: none;
 }
 
+.a-blue
+{
+  color: #0000EE;
+}
+
 ul
 {
   list-style: none;
@@ -78,11 +83,32 @@ ul
   {
     margin-right: 2rem;
   }
+
+  &-link:hover, &-link:active, &-link-sm:hover, &-link-sm:active
+  {
+    color: hsl(5, 85%, 63%);
+  }
+
+  &-toggle
+  {
+    cursor: pointer;
+  }
+}
+
+.main-flex
+{
+  display: flex;
+  flex-direction: column;
 }
 
 .intro
 {
   margin: 1rem 0;
+
+  &-img
+  {
+    width: 100%;
+  }
 
   &-img-sm
   {
@@ -106,13 +132,18 @@ ul
 
   &-btn
   {
-  
     padding: 0.938rem 1.875rem;
     color: #000;
     font-weight: 800;
     background-color: hsl(5, 85%, 63%);
     text-transform: uppercase;
     letter-spacing: 0.063rem;
+
+    &:hover, &:active
+    {
+      color: #fff;
+      background-color: #000;
+    }
   }
 }
 
@@ -132,6 +163,11 @@ ul
   {
     margin-bottom: 0.625rem;
     color: hsl(36, 100%, 99%);
+
+    &:hover, &:active
+    {
+      color: hsl(35, 77%, 62%);
+    }
   }
 
   &-desc
@@ -188,5 +224,18 @@ ul
   &-desc
   {
     line-height: 1.8;
+  }
+}
+
+@media screen and (min-width: 1440px)
+{
+  .container
+  {
+    margin: 3.75rem 6.25rem;
+  }
+
+  .main-flex
+  {
+    flex-direction: row;
   }
 }
